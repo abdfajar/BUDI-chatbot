@@ -53,7 +53,7 @@ st.markdown("---")
 
 
 #Contributing
-st.markdown("### 🎯 Contributing")
+st.markdown("### 🎯 Kontrubusi")
 st.markdown("""
 **BUDI sedang dalam pengembangan rutin dari OSS. Jangan ragu untuk berkontribusi dan membantu saya membuatnya lebih sadar data!**
 """, unsafe_allow_html=True)
