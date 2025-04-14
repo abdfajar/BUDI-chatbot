@@ -12,7 +12,7 @@ from langchain.llms import OpenAI
 import os
 from langchain.text_splitter import CharacterTextSplitter
 
-st.set_page_config(layout="wide", page_icon="💬", page_title="Robby | Chat-Bot 🤖")
+st.set_page_config(layout="wide", page_icon="💬", page_title="BUDI | Chat-Bot 🤖")
 
 # Instantiate the main components
 layout, sidebar, utils = Layout(), Sidebar(), Utilities()
