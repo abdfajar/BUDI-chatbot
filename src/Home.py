@@ -22,7 +22,7 @@ with st.sidebar.expander("📬 Contact"):
 #Title
 st.markdown(
     """
-    <h2 style='text-align: center;'>Robby, your data-aware assistant 🤖</h1>
+    <h2 style='text-align: center;'>BUDI, Asisten anda yang sadar Data 🤖</h1>
     """,
     unsafe_allow_html=True,)
 
