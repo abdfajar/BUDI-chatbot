@@ -43,11 +43,11 @@ st.markdown("---")
 
 
 #Robby's Pages
-st.subheader("🚀 Robby's Pages")
+st.subheader("🚀 Laman BUDI")
 st.write("""
-- **BUDI-Chat**: General Chat on data (PDF, TXT,CSV) with a [vectorstore](https://github.com/facebookresearch/faiss) (index useful parts(max 4) for respond to the user) | works with [ConversationalRetrievalChain](https://python.langchain.com/en/latest/modules/chains/index_examples/chat_vector_db.html)
-- **BUDI-Sheet** (beta): Chat on tabular data (CSV) | for precise information | process the whole file | works with [CSV_Agent](https://python.langchain.com/en/latest/modules/agents/toolkits/examples/csv.html) + [PandasAI](https://github.com/gventuri/pandas-ai) for data manipulation and graph creation
-- **BUDI-Youtube**: Summarize YouTube videos with [summarize-chain](https://python.langchain.com/en/latest/modules/chains/index_examples/summarize.html)
+- **BUDI-Chat**: Chat umum dengan sumber data (PDF, TXT,CSV) dengan [vectorstore](https://github.com/facebookresearch/faiss) (indeks bagian yang berguna (maks 4) untuk menanggapi pengguna) |  menggunakan [ConversationalRetrievalChain](https://python.langchain.com/en/latest/modules/chains/index_examples/chat_vector_db.html)
+- **BUDI-Sheet** (beta): Dialog dengan data tabular (CSV) | untuk informasi yang tepat | memproses seluruh file | bekerja dengan [CSV_Agent]](https://python.langchain.com/en/latest/modules/agents/toolkits/examples/csv.html) + [PandasAI](https://github.com/gventuri/pandas-ai) untuk manipulasi data dan pembuatan grafik
+- **BUDI-Youtube**: Meringkas video YouTube dengan [summarize-chain](https://python.langchain.com/en/latest/modules/chains/index_examples/summarize.html)
 """)
 st.markdown("---")
 
@@ -55,7 +55,7 @@ st.markdown("---")
 #Contributing
 st.markdown("### 🎯 Contributing")
 st.markdown("""
-**BUDI is under regular development from OSS. Feel free to contribute and help me make it even more data-aware!**
+**BUDI sedang dalam pengembangan rutin dari OSS. Jangan ragu untuk berkontribusi dan membantu saya membuatnya lebih sadar data!**
 """, unsafe_allow_html=True)
 
 
