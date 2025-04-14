@@ -19,14 +19,14 @@ class Utilities:
         #you can define your API key in .env directly
         if os.path.exists(".env") and os.environ.get("OPENAI_API_KEY") is not None:
             user_api_key = os.environ["OPENAI_API_KEY"]
-            st.sidebar.success("API key loaded from .env", icon="🚀")
+            st.sidebar.success("Kunci API dimuat dari .env", icon="🚀")
         else:
             if st.session_state.api_key is not None:
                 user_api_key = st.session_state.api_key
-                st.sidebar.success("API key loaded from previous input", icon="🚀")
+                st.sidebar.success("Kunci API dimuat dari input sebelumnya", icon="🚀")
             else:
                 user_api_key = st.sidebar.text_input(
-                    label="#### Your OpenAI API key 👇", placeholder="sk-...", type="password"
+                    label="#### Kunci OpenAI API anda 👇", placeholder="sk-...", type="password"
                 )
                 if user_api_key:
                     st.session_state.api_key = user_api_key
@@ -44,13 +44,13 @@ class Utilities:
         if uploaded_file is not None:
 
             def show_csv_file(uploaded_file):
-                file_container = st.expander("Your CSV file :")
+                file_container = st.expander("File CSV anda :")
                 uploaded_file.seek(0)
                 shows = pd.read_csv(uploaded_file)
                 file_container.write(shows)
 
             def show_pdf_file(uploaded_file):
-                file_container = st.expander("Your PDF file :")
+                file_container = st.expander("File PDF anda :")
                 with pdfplumber.open(uploaded_file) as pdf:
                     pdf_text = ""
                     for page in pdf.pages:
@@ -58,7 +58,7 @@ class Utilities:
                 file_container.write(pdf_text)
             
             def show_txt_file(uploaded_file):
-                file_container = st.expander("Your TXT file:")
+                file_container = st.expander("File TXT anda:")
                 uploaded_file.seek(0)
                 content = uploaded_file.read().decode("utf-8")
                 file_container.write(content)
@@ -85,7 +85,7 @@ class Utilities:
     @staticmethod
     def setup_chatbot(uploaded_file, model, temperature):
         """
-        Sets up the chatbot with the uploaded file, model, and temperature
+        Menyiapkan chatbot dengan file, model, dan temperatur yang diunggah
         """
         embeds = Embedder()
 
