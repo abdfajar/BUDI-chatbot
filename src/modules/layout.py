@@ -4,11 +4,11 @@ class Layout:
     
     def show_header(self, types_files):
         """
-        Displays the header of the app
+        Menampilkan header aplikasi
         """
         st.markdown(
             f"""
-            <h1 style='text-align: center;'> Ask Robby about your {types_files} files ! 😁</h1>
+            <h1 style='text-align: center;'> Tanya BUDI tentang file {types_files} anda ! 😁</h1>
             """,
             unsafe_allow_html=True,
         )
