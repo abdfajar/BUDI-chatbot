@@ -19,7 +19,7 @@ layout, sidebar, utils = Layout(), Sidebar(), Utilities()
 
 st.markdown(
     f"""
-    <h1 style='text-align: center;'> Ask Robby to summarize youtube video ! 😁</h1>
+    <h1 style='text-align: center;'> Tanya BUDI untuk ringkasan video Youtube ! 😁</h1>
     """,
     unsafe_allow_html=True,
 )
@@ -47,7 +47,7 @@ else:
                 video_id = match.group()
         return video_id
 
-    video_url = st.text_input(placeholder="Enter Youtube Video URL", label_visibility="hidden", label =" ")
+    video_url = st.text_input(placeholder="Ketikan URL Video Youtube ", label_visibility="hidden", label =" ")
     if video_url :
         video_id = get_youtube_id(video_url)
 
