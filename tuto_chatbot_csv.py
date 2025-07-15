@@ -15,7 +15,7 @@ user_api_key = st.sidebar.text_input(
     placeholder="Tempelkan Kunci openAI API anda, sk-",
     type="password")
 
-uploaded_file = st.sidebar.file_uploader("upload", type="csv")
+uploaded_file = st.sidebar.file_uploader("upload", type="csv", csv_args={'delimiter': ';'})
 
 if uploaded_file :
     with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
