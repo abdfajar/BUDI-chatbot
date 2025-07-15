@@ -22,7 +22,7 @@ if uploaded_file :
         tmp_file.write(uploaded_file.getvalue())
         tmp_file_path = tmp_file.name
 
-    loader = CSVLoader(file_path=tmp_file_path, encoding="utf-8",from langchain.document_loaders.csv_loader import CSVLoader
+    loader = CSVLoader(file_path=tmp_file_path, csv_args={'delimiter': ';'},from langchain.document_loaders.csv_loader import CSVLoader
 
 loader = CSVLoader(file_path="data.csv", csv_args={'delimiter': ';'})
 documents = loader.load()
