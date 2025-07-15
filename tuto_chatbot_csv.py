@@ -15,14 +15,21 @@ user_api_key = st.sidebar.text_input(
     placeholder="Tempelkan Kunci openAI API anda, sk-",
     type="password")
 
-uploaded_file = st.sidebar.file_uploader("upload", type="csv", csv_args={'delimiter': ';'})
+uploaded_file = st.sidebar.file_uploader("upload", type="csv")
 
 if uploaded_file :
     with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
         tmp_file.write(uploaded_file.getvalue())
         tmp_file_path = tmp_file.name
 
-    loader = CSVLoader(file_path=tmp_file_path, encoding="utf-8")
+    loader = CSVLoader(file_path=tmp_file_path, encoding="utf-8",from langchain.document_loaders.csv_loader import CSVLoader
+
+loader = CSVLoader(file_path="data.csv", csv_args={'delimiter': ';'})
+documents = loader.load()
+
+for doc in documents[:3]:  # tampilkan 3 dokumen pertama
+    print(doc.page_content)
+)
     data = loader.load()
 
     embeddings = OpenAIEmbeddings()
